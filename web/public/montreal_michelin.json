@@ -1,7 +1,7 @@
 {
   "source_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurants",
   "restaurant_count": 63,
-  "scraped_at": "2026-05-24T18:07:25.885472+00:00",
+  "scraped_at": "2026-05-26T22:51:56.889327+00:00",
   "restaurants": [
     {
       "id": "le-club-chasse-et-peche",
@@ -18,48 +18,82 @@
       "in_montreal_city": true,
       "lat": 45.5088556,
       "lng": -73.5525316,
-      "good_for": [],
+      "good_for": [
+        "iconic"
+      ],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [
+        "friday",
+        "saturday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "18:00",
-          "close": "22:30",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "17:30",
-          "close": "22:30",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -68,8 +102,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/le-club-chasse-et-peche",
       "booking_url": "https://www.opentable.ca/r/le-club-chasse-et-peche-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "Tucked away behind an unshowy entrance, this restaurant is located between City Hall and the old port, next to the Château Ramezay. Part of its appeal lies in the historical character of the ...",
-      "scraped_at": "2026-05-24T18:03:34.796006+00:00"
+      "scraped_at": "2026-05-26T22:51:47.240842+00:00"
     },
     {
       "id": "garde-manger-1217866",
@@ -87,14 +120,20 @@
       "lat": 45.5028267,
       "lng": -73.555474,
       "good_for": [],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-678-5044",
       "website": "https://www.gardemanger.ca/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/garde-manger-1217866",
       "booking_url": "https://www.opentable.ca/r/garde-manger-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "In Old Montreal, this friendly restaurant lies behind a discreet façade. With its paneled ceilings, leather banquettes, bistro chairs, and low lighting, the atmosphere calls to mind an elegant inn...",
-      "scraped_at": "2026-05-24T18:03:38.413174+00:00"
+      "scraped_at": "2026-05-26T22:51:47.396085+00:00"
     },
     {
       "id": "bouillon-bilk",
@@ -114,14 +153,22 @@
       "good_for": [
         "solo_dining"
       ],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [
+        "wheelchair_access"
+      ],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-845-1595",
       "website": "https://www.bouillonbilk.com",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/bouillon-bilk",
       "booking_url": "https://resy.com/cities/montreal-qc/venues/bouillon-bilk?aff_id=0VKMelA",
       "online_booking": true,
-      "description_short": "Right in the heart of the Quartier des Spectacles, a stone's throw from Place des Arts, Bouillon Bilk blends seamlessly into the bustling rue Sainte-Catherine. Behind the restaurant's plain façade...",
-      "scraped_at": "2026-05-24T18:03:42.035648+00:00"
+      "scraped_at": "2026-05-26T22:51:47.550762+00:00"
     },
     {
       "id": "toque-1216675",
@@ -138,48 +185,99 @@
       "in_montreal_city": true,
       "lat": 45.5029039,
       "lng": -73.5609573,
-      "good_for": [],
+      "good_for": [
+        "iconic"
+      ],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [
+        "wheelchair_access"
+      ],
+      "open_days": [
+        "friday",
+        "saturday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": true,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": "11:30",
-          "close": "13:45",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "13:45"
+            },
+            {
+              "open": "17:30",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "11:30",
-          "close": "13:45",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "13:45"
+            },
+            {
+              "open": "17:30",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "11:30",
-          "close": "13:45",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "13:45"
+            },
+            {
+              "open": "17:30",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "11:30",
-          "close": "13:45",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "13:45"
+            },
+            {
+              "open": "17:30",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "17:30",
-          "close": "21:30",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -188,8 +286,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/toque-1216675",
       "booking_url": "https://www.opentable.ca/r/restaurant-toque-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "A classic address that has been a mainstay on Montreal's restaurant scene for over 30 years. Chef-owner Normand Laprise and his team take full advantage of Québec's seasonal terroir to put ...",
-      "scraped_at": "2026-05-24T18:03:45.774972+00:00"
+      "scraped_at": "2026-05-26T22:51:47.694157+00:00"
     },
     {
       "id": "cadet-1218284",
@@ -207,14 +304,23 @@
       "lat": 45.5104034,
       "lng": -73.5648637,
       "good_for": [],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "wheelchair_access"
+      ],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-903-1631",
       "website": "https://www.restaurantcadet.com/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/cadet-1218284",
       "booking_url": "https://resy.com/cities/montreal-qc/venues/cadet?aff_id=0VKMelA",
       "online_booking": true,
-      "description_short": "This restaurant a stone's throw from the Quartier des Spectacles is the little sister of Bouillon Bilk and run by the same team. The spacious room, with its contemporary, minimalist style, partly ...",
-      "scraped_at": "2026-05-24T18:03:49.305757+00:00"
+      "scraped_at": "2026-05-26T22:51:47.804612+00:00"
     },
     {
       "id": "dorsia-1216822",
@@ -232,47 +338,87 @@
       "lat": 45.5017061,
       "lng": -73.5589778,
       "good_for": [],
+      "special_diets": [
+        "halal_options",
+        "kosher_options",
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [
+        "friday",
+        "saturday",
+        "sunday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         }
       ],
@@ -281,8 +427,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/dorsia-1216822",
       "booking_url": "https://www.opentable.ca/r/dorsia-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "With its decor of marble and mirrors, this chic and elegant establishment creates the ideal atmosphere for an intimate dinner for two. The delightfully simple menu harmoniously unites French and ...",
-      "scraped_at": "2026-05-24T18:03:52.982889+00:00"
+      "scraped_at": "2026-05-26T22:51:47.933896+00:00"
     },
     {
       "id": "othym",
@@ -299,48 +444,94 @@
       "in_montreal_city": true,
       "lat": 45.5171272,
       "lng": -73.5560091,
-      "good_for": [],
+      "good_for": [
+        "eat_like_a_local"
+      ],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [
+        "friday",
+        "monday",
+        "saturday",
+        "sunday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "tuesday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         }
       ],
@@ -349,8 +540,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/othym",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "This restaurant has moved into a larger, brighter space. True to its ecological commitments, the new establishment has used a range of recycled materials. The menu, which is written on the ...",
-      "scraped_at": "2026-05-24T18:03:56.637662+00:00"
+      "scraped_at": "2026-05-26T22:51:48.090609+00:00"
     },
     {
       "id": "monarque",
@@ -370,14 +560,20 @@
       "good_for": [
         "groups"
       ],
+      "special_diets": [],
+      "services": [
+        "wheelchair_access"
+      ],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-875-3896",
       "website": "https://restaurantmonarque.ca/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/monarque",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "A popular spot for Montreal power lunches, this restaurant has two distinct spaces: a lively brasserie, and then a more elegant dining room with immaculate white tablecloths on artfully spaced ...",
-      "scraped_at": "2026-05-24T18:04:00.505027+00:00"
+      "scraped_at": "2026-05-26T22:51:48.248652+00:00"
     },
     {
       "id": "memo",
@@ -395,47 +591,96 @@
       "lat": 45.5005813,
       "lng": -73.5597832,
       "good_for": [],
+      "special_diets": [
+        "halal_options",
+        "kosher_options",
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "terrace",
+        "wheelchair_access"
+      ],
+      "open_days": [
+        "friday",
+        "saturday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": true,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": "11:30",
-          "close": "14:00",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "14:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "11:30",
-          "close": "14:00",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "14:00"
+            },
+            {
+              "open": "17:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "11:30",
-          "close": "14:00",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "14:00"
+            },
+            {
+              "open": "17:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "11:30",
-          "close": "14:00",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "14:00"
+            },
+            {
+              "open": "17:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "17:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -444,8 +689,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/memo",
       "booking_url": "https://www.opentable.ca/r/memo-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "Set against the backdrop of an industrial-style loft with exposed pipework, a central island houses a kitchen-counter. The eclectic and modern cuisine is enhanced by influences from around the ...",
-      "scraped_at": "2026-05-24T18:04:04.175828+00:00"
+      "scraped_at": "2026-05-26T22:51:48.377475+00:00"
     },
     {
       "id": "oncle-lee-kao",
@@ -463,17 +707,23 @@
       "lat": 45.499449,
       "lng": -73.55558,
       "good_for": [
-        "solo_dining",
-        "family_friendly"
+        "family_friendly",
+        "solo_dining"
       ],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-303-1100",
       "website": "https://www.restaurantonclelee.com/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/oncle-lee-kao",
       "booking_url": "https://resy.com/cities/montreal-qc/venues/oncle-lee-vieux-montreal?aff_id=0VKMelA",
       "online_booking": true,
-      "description_short": "From the team behind Oncle Lee, this restaurant with subdued lighting from red lanterns focuses on grilled dishes (kăo is Mandarin for \"grill\"): lamb skewers with cumin and shishito peppers, spicy...",
-      "scraped_at": "2026-05-24T18:04:07.839762+00:00"
+      "scraped_at": "2026-05-26T22:51:48.534000+00:00"
     },
     {
       "id": "place-carmin",
@@ -493,14 +743,24 @@
       "good_for": [
         "groups"
       ],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "brunch",
+        "terrace"
+      ],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-439-0740",
       "website": "https://www.placecarmin.com/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/place-carmin",
       "booking_url": "https://resy.com/cities/montreal-qc/venues/place-carmin?aff_id=0VKMelA",
       "online_booking": true,
-      "description_short": "This restaurant in a repurposed industrial building has been designed by the Bouillon Bilk team, who are also behind the restaurants Cadet and Oncle Lee. The striking dining space makes an ...",
-      "scraped_at": "2026-05-24T18:04:11.577026+00:00"
+      "scraped_at": "2026-05-26T22:51:48.691338+00:00"
     },
     {
       "id": "panacee",
@@ -520,47 +780,72 @@
       "good_for": [
         "solo_dining"
       ],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [
+        "friday",
+        "saturday",
+        "thursday",
+        "wednesday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "wednesday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -569,8 +854,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/panacee",
       "booking_url": "https://www.opentable.ca/r/restaurant-panacee-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "Panacée, or panacea, is a universal remedy to cure all ills, something akin to what the cuisine of Chef Catherine Couvet Desrosiers is accomplishing. She works behind a circular counter, welcoming...",
-      "scraped_at": "2026-05-24T18:04:15.371628+00:00"
+      "scraped_at": "2026-05-26T22:51:48.819739+00:00"
     },
     {
       "id": "le-serpent",
@@ -588,47 +872,85 @@
       "lat": 45.4976709,
       "lng": -73.5572272,
       "good_for": [],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [
+        "friday",
+        "monday",
+        "saturday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": "17:45",
-          "close": "22:30",
+          "slots": [
+            {
+              "open": "17:45",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "tuesday",
-          "open": "17:45",
-          "close": "22:30",
+          "slots": [
+            {
+              "open": "17:45",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "17:45",
-          "close": "22:30",
+          "slots": [
+            {
+              "open": "17:45",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "17:45",
-          "close": "22:30",
+          "slots": [
+            {
+              "open": "17:45",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "17:45",
-          "close": "22:30",
+          "slots": [
+            {
+              "open": "17:45",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "17:45",
-          "close": "22:30",
+          "slots": [
+            {
+              "open": "17:45",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -637,8 +959,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/le-serpent",
       "booking_url": "https://www.opentable.ca/r/le-serpent-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "Housed in a warehouse of this former foundry turned contemporary art center, this location blends contemporary elegance with industrial heritage. Exposed brickwork, large windows, and metal ...",
-      "scraped_at": "2026-05-24T18:04:19.161844+00:00"
+      "scraped_at": "2026-05-26T22:51:48.986920+00:00"
     },
     {
       "id": "le-mousso",
@@ -655,15 +976,23 @@
       "in_montreal_city": true,
       "lat": 45.5200013,
       "lng": -73.5631696,
-      "good_for": [],
+      "good_for": [
+        "chefs_table"
+      ],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 438-384-7410",
       "website": "https://lemousso.com",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/le-mousso",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "A meal at this extraordinary restaurant is the opportunity to sample a 3-hour fine dining experience centred on a single tasting menu of around 10 small plates. The dishes for all thirty diners ...",
-      "scraped_at": "2026-05-24T18:04:22.952332+00:00"
+      "scraped_at": "2026-05-26T22:51:49.145375+00:00"
     },
     {
       "id": "restaurant-de-l-ithq",
@@ -683,47 +1012,129 @@
       "good_for": [
         "family_friendly"
       ],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "wheelchair_access"
+      ],
+      "open_days": [
+        "friday",
+        "monday",
+        "saturday",
+        "sunday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": true,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": "07:30",
-          "close": "10:00",
+          "slots": [
+            {
+              "open": "07:30",
+              "close": "10:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "tuesday",
-          "open": "07:00",
-          "close": "09:00",
+          "slots": [
+            {
+              "open": "07:00",
+              "close": "09:00"
+            },
+            {
+              "open": "12:00",
+              "close": "13:30"
+            },
+            {
+              "open": "18:00",
+              "close": "21:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "07:00",
-          "close": "09:00",
+          "slots": [
+            {
+              "open": "07:00",
+              "close": "09:00"
+            },
+            {
+              "open": "12:00",
+              "close": "13:30"
+            },
+            {
+              "open": "18:00",
+              "close": "21:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "07:00",
-          "close": "09:00",
+          "slots": [
+            {
+              "open": "07:00",
+              "close": "09:00"
+            },
+            {
+              "open": "12:00",
+              "close": "13:30"
+            },
+            {
+              "open": "18:00",
+              "close": "21:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "07:00",
-          "close": "09:00",
+          "slots": [
+            {
+              "open": "07:00",
+              "close": "09:00"
+            },
+            {
+              "open": "12:00",
+              "close": "13:30"
+            },
+            {
+              "open": "18:00",
+              "close": "21:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "07:30",
-          "close": "10:00",
+          "slots": [
+            {
+              "open": "07:30",
+              "close": "10:00"
+            },
+            {
+              "open": "18:00",
+              "close": "21:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": "07:30",
-          "close": "10:00",
+          "slots": [
+            {
+              "open": "07:30",
+              "close": "10:00"
+            }
+          ],
           "closed": false
         }
       ],
@@ -732,8 +1143,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/restaurant-de-l-ithq",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "As part of the Institut de tourisme et d'hôtellerie du Québec, a hospitality industry school, the ITHQ restaurant is underpinned by a unique educational approach. Students and professionals work ...",
-      "scraped_at": "2026-05-24T18:04:26.599628+00:00"
+      "scraped_at": "2026-05-26T22:51:49.276200+00:00"
     },
     {
       "id": "ferreira-cafe",
@@ -754,47 +1164,107 @@
         "family_friendly",
         "groups"
       ],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "terrace"
+      ],
+      "open_days": [
+        "friday",
+        "monday",
+        "saturday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": true,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": "11:45",
-          "close": "14:30",
+          "slots": [
+            {
+              "open": "11:45",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "tuesday",
-          "open": "11:45",
-          "close": "14:30",
+          "slots": [
+            {
+              "open": "11:45",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "11:45",
-          "close": "14:30",
+          "slots": [
+            {
+              "open": "11:45",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "11:45",
-          "close": "14:30",
+          "slots": [
+            {
+              "open": "11:45",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "11:45",
-          "close": "14:30",
+          "slots": [
+            {
+              "open": "11:45",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -803,8 +1273,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/ferreira-cafe",
       "booking_url": "https://www.opentable.ca/r/ferreira-cafe?ref=18490",
       "online_booking": true,
-      "description_short": "The restaurant's warm, elegant decor blends Portuguese influences with a cosmopolitan New York City vibe. The large bar and counter decorated with azulejos contrasts harmoniously with the chic, ...",
-      "scraped_at": "2026-05-24T18:04:30.285285+00:00"
+      "scraped_at": "2026-05-26T22:51:49.412057+00:00"
     },
     {
       "id": "jerome-ferrer-europea",
@@ -822,14 +1291,22 @@
       "lat": 45.4966021,
       "lng": -73.5719172,
       "good_for": [],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [
+        "wheelchair_access"
+      ],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-398-9229",
       "website": "https://jeromeferrer.ca",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/jerome-ferrer-europea",
       "booking_url": "https://www.opentable.ca/r/jerome-ferrer-europea-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "Housed in an ultra-modern architectural setting with towering windows bathing the interior in light, this restaurant offers diners a wonderful view of the brigade at work in the glass-paned ...",
-      "scraped_at": "2026-05-24T18:04:33.973796+00:00"
+      "scraped_at": "2026-05-26T22:51:49.534054+00:00"
     },
     {
       "id": "l-express",
@@ -847,17 +1324,21 @@
       "lat": 45.5200554,
       "lng": -73.5742492,
       "good_for": [
-        "solo_dining",
-        "family_friendly"
+        "family_friendly",
+        "solo_dining"
       ],
+      "special_diets": [],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-845-5333",
       "website": "https://restaurantlexpress.com/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/l-express",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "In the Plateau Mont-Royal district, this iconic bistro, which has been going strong for several decades, was founded by theatre fans and has become a hotspot for night owls (last orders at 12.30am...",
-      "scraped_at": "2026-05-24T18:04:37.714759+00:00"
+      "scraped_at": "2026-05-26T22:51:49.734236+00:00"
     },
     {
       "id": "schwartz-s-deli",
@@ -875,14 +1356,18 @@
       "lat": 45.5162336,
       "lng": -73.577545,
       "good_for": [],
+      "special_diets": [],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-842-4813",
       "website": "https://schwartzsdeli.com/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/schwartz-s-deli",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "This restaurant is as quintessentially Montreal as Notre-Dame Basilica or Mont Royal. As soon as you cross the threshold, you are immersed in history: covering an entire wall, photos, ...",
-      "scraped_at": "2026-05-24T18:04:42.128172+00:00"
+      "scraped_at": "2026-05-26T22:51:49.942132+00:00"
     },
     {
       "id": "renoir-1245131",
@@ -900,14 +1385,21 @@
       "lat": 45.501457,
       "lng": -73.577401,
       "good_for": [],
+      "special_diets": [],
+      "services": [
+        "terrace",
+        "wheelchair_access"
+      ],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-788-3038",
       "website": "https://restaurant-renoir.com/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/renoir-1245131",
       "booking_url": "https://www.opentable.ca/r/nini-salon-a-cocktails-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "This city-centre hotel-restaurant is an elegant location with a chef's counter for a few lucky diners. With his cuisine, Olivier Perret, a French chef from Burgundy, navigates his way between ...",
-      "scraped_at": "2026-05-24T18:04:46.101683+00:00"
+      "scraped_at": "2026-05-26T22:51:50.118286+00:00"
     },
     {
       "id": "okeya-kyujiro-montreal",
@@ -927,14 +1419,18 @@
       "good_for": [
         "solo_dining"
       ],
+      "special_diets": [],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-557-1227",
       "website": "https://okeya.ca/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/okeya-kyujiro-montreal",
       "booking_url": "https://www.opentable.ca/r/okeya-kyujiro-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "There is a distinct theatricality to this unique omakase experience, with a curtain lifting to the strains of dramatic music to reveal the kitchen! The seafood-centric menu features over 20 small ...",
-      "scraped_at": "2026-05-24T18:04:50.104406+00:00"
+      "scraped_at": "2026-05-26T22:51:50.290065+00:00"
     },
     {
       "id": "marcus-1216923",
@@ -952,47 +1448,149 @@
       "lat": 45.4984108,
       "lng": -73.576685,
       "good_for": [],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [
+        "brunch",
+        "terrace"
+      ],
+      "open_days": [
+        "friday",
+        "monday",
+        "saturday",
+        "sunday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": true,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": "07:00",
-          "close": "10:30",
+          "slots": [
+            {
+              "open": "07:00",
+              "close": "10:30"
+            },
+            {
+              "open": "12:00",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "tuesday",
-          "open": "07:00",
-          "close": "10:30",
+          "slots": [
+            {
+              "open": "07:00",
+              "close": "10:30"
+            },
+            {
+              "open": "12:00",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "07:00",
-          "close": "10:30",
+          "slots": [
+            {
+              "open": "07:00",
+              "close": "10:30"
+            },
+            {
+              "open": "12:00",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "07:00",
-          "close": "10:30",
+          "slots": [
+            {
+              "open": "07:00",
+              "close": "10:30"
+            },
+            {
+              "open": "12:00",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "07:00",
-          "close": "10:30",
+          "slots": [
+            {
+              "open": "07:00",
+              "close": "10:30"
+            },
+            {
+              "open": "12:00",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "07:30",
-          "close": "10:30",
+          "slots": [
+            {
+              "open": "07:30",
+              "close": "10:30"
+            },
+            {
+              "open": "11:00",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": "07:30",
-          "close": "10:30",
+          "slots": [
+            {
+              "open": "07:30",
+              "close": "10:30"
+            },
+            {
+              "open": "11:00",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         }
       ],
@@ -1001,8 +1599,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/marcus-1216923",
       "booking_url": "https://www.opentable.ca/r/marcus-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "Marcus Samuelsson, a chef with Ethiopian heritage, grew up in Sweden and has made his name in New York. He heads up this restaurant located on the third floor of the Four Seasons Hotel. With its ...",
-      "scraped_at": "2026-05-24T18:04:53.832636+00:00"
+      "scraped_at": "2026-05-26T22:51:50.429630+00:00"
     },
     {
       "id": "maison-boulud-1216816",
@@ -1019,48 +1616,137 @@
       "in_montreal_city": true,
       "lat": 45.5002004,
       "lng": -73.5781188,
-      "good_for": [],
+      "good_for": [
+        "outdoor_dining"
+      ],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [
+        "brunch",
+        "terrace",
+        "wheelchair_access"
+      ],
+      "open_days": [
+        "friday",
+        "monday",
+        "saturday",
+        "sunday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": true,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": "07:00",
-          "close": "10:00",
+          "slots": [
+            {
+              "open": "07:00",
+              "close": "10:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "tuesday",
-          "open": "07:00",
-          "close": "10:00",
+          "slots": [
+            {
+              "open": "07:00",
+              "close": "10:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "07:00",
-          "close": "10:00",
+          "slots": [
+            {
+              "open": "07:00",
+              "close": "10:00"
+            },
+            {
+              "open": "12:00",
+              "close": "14:00"
+            },
+            {
+              "open": "18:00",
+              "close": "21:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "07:00",
-          "close": "10:00",
+          "slots": [
+            {
+              "open": "07:00",
+              "close": "10:00"
+            },
+            {
+              "open": "12:00",
+              "close": "14:00"
+            },
+            {
+              "open": "18:00",
+              "close": "21:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "07:00",
-          "close": "10:00",
+          "slots": [
+            {
+              "open": "07:00",
+              "close": "10:00"
+            },
+            {
+              "open": "12:00",
+              "close": "14:00"
+            },
+            {
+              "open": "18:00",
+              "close": "21:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "07:00",
-          "close": "10:00",
+          "slots": [
+            {
+              "open": "07:00",
+              "close": "10:00"
+            },
+            {
+              "open": "12:00",
+              "close": "14:00"
+            },
+            {
+              "open": "18:00",
+              "close": "21:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": "07:00",
-          "close": "10:00",
+          "slots": [
+            {
+              "open": "07:00",
+              "close": "10:00"
+            },
+            {
+              "open": "12:00",
+              "close": "14:00"
+            },
+            {
+              "open": "18:00",
+              "close": "21:00"
+            }
+          ],
           "closed": false
         }
       ],
@@ -1069,8 +1755,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/maison-boulud-1216816",
       "booking_url": "https://www.opentable.ca/r/maison-boulud-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "In this restaurant ensconced in the refined setting of The Ritz-Carlton Hotel, the Midas touch of Chef Daniel Boulud is unmistakable. The menu brings a touch of New York temerity to contemporary ...",
-      "scraped_at": "2026-05-24T18:04:57.551861+00:00"
+      "scraped_at": "2026-05-26T22:51:50.570025+00:00"
     },
     {
       "id": "au-pied-de-cochon",
@@ -1087,15 +1772,23 @@
       "in_montreal_city": true,
       "lat": 45.5221805,
       "lng": -73.5744515,
-      "good_for": [],
+      "good_for": [
+        "iconic"
+      ],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "",
       "website": "https://www.aupieddecochon.ca/us/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/au-pied-de-cochon",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "As French peasant tradition has it: \"Tout est bon dans le cochon\"—meaning all parts of the pig can be cooked—an approach this Maple Country restaurant embraces. Here, they make no bones about ...",
-      "scraped_at": "2026-05-24T18:05:01.246864+00:00"
+      "scraped_at": "2026-05-26T22:51:50.740015+00:00"
     },
     {
       "id": "cabaret-l-enfer",
@@ -1115,47 +1808,81 @@
       "good_for": [
         "solo_dining"
       ],
+      "special_diets": [
+        "halal_options",
+        "kosher_options",
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [
+        "friday",
+        "saturday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": "18:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "18:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "18:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "18:00",
-          "close": "00:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "00:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "18:00",
-          "close": "00:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "00:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -1164,8 +1891,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/cabaret-l-enfer",
       "booking_url": "https://www.opentable.ca/r/cabaret-lenfer-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "This restaurant in Le Plateau is inspired by the legendary Cabaret de l'Enfer in Montmartre, Paris. Inside, diners are immersed in an ambience where rock 'n' roll meets industrial. The large, ...",
-      "scraped_at": "2026-05-24T18:05:04.955259+00:00"
+      "scraped_at": "2026-05-26T22:51:50.914085+00:00"
     },
     {
       "id": "yokato-yokabai",
@@ -1185,14 +1911,21 @@
       "good_for": [
         "solo_dining"
       ],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-282-9991",
       "website": "https://yoka.ca/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/yokato-yokabai",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "The ramen served at this modest shop is among the most popular in the city, on account of the carefully simmered broths and meticulously crafted noodles. The establishment doesn't take ...",
-      "scraped_at": "2026-05-24T18:05:08.587770+00:00"
+      "scraped_at": "2026-05-26T22:51:51.213930+00:00"
     },
     {
       "id": "foxy",
@@ -1209,15 +1942,47 @@
       "in_montreal_city": true,
       "lat": 45.4897592,
       "lng": -73.5674522,
-      "good_for": [],
+      "good_for": [
+        "chefs_table",
+        "date_night",
+        "eat_like_a_local",
+        "family_friendly",
+        "farm_to_table",
+        "groups",
+        "iconic",
+        "inspectors_favorite",
+        "outdoor_dining",
+        "solo_dining"
+      ],
+      "special_diets": [
+        "halal_options",
+        "kosher_options",
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "brunch",
+        "terrace",
+        "wheelchair_access"
+      ],
+      "open_days": [
+        "friday",
+        "monday",
+        "saturday",
+        "sunday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": true,
+      "serves_dinner": true,
       "hours": [],
       "phone": "+1 514-925-7007",
       "website": "https://www.foxy.restaurant",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/foxy",
       "booking_url": null,
-      "online_booking": false,
-      "description_short": "In what was once an industrial area that is now gentrified, this place brilliantly captures the art de vivre in today's Montreal: hand-picked eco-responsible ingredients, wood-fired cuisine ...",
-      "scraped_at": "2026-05-24T18:05:12.364342+00:00"
+      "online_booking": true,
+      "scraped_at": "2026-05-26T22:51:51.410184+00:00"
     },
     {
       "id": "le-virunga",
@@ -1235,47 +2000,73 @@
       "lat": 45.5240741,
       "lng": -73.5762236,
       "good_for": [],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [
+        "friday",
+        "saturday",
+        "thursday",
+        "wednesday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "wednesday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "18:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "18:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -1284,8 +2075,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/le-virunga",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "Afro-Portuguese chef Maria-José de Frias named her restaurant after this national park in the Congo Basin in her home country (DRC). Here, produce from Quebec meets sub-Saharan African spices and ...",
-      "scraped_at": "2026-05-24T18:05:16.016487+00:00"
+      "scraped_at": "2026-05-26T22:51:51.546500+00:00"
     },
     {
       "id": "candide",
@@ -1303,14 +2093,26 @@
       "lat": 45.4890085,
       "lng": -73.5696781,
       "good_for": [],
+      "special_diets": [
+        "halal_options",
+        "kosher_options",
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "terrace",
+        "wheelchair_access"
+      ],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-447-2717",
       "website": "https://www.restaurantcandide.com",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/candide",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "Tucked away just behind the old church, Église Saint-Joseph, and boasting a large terrace that is highly sought after in fine weather, this restaurant opened around 10 years ago in a converted ...",
-      "scraped_at": "2026-05-24T18:05:19.725811+00:00"
+      "scraped_at": "2026-05-26T22:51:51.722510+00:00"
     },
     {
       "id": "kitano-shokudo",
@@ -1330,14 +2132,20 @@
       "good_for": [
         "solo_dining"
       ],
+      "special_diets": [],
+      "services": [
+        "wheelchair_access"
+      ],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 438-383-4700",
       "website": "https://www.bistrootto.com/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/kitano-shokudo",
       "booking_url": "https://www.opentable.ca/r/kitano-shokudo-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "This small restaurant with a discreet red-brick façade has its fair share of regulars. A handful of tables and a counter surrounding the kitchen form the simple setting in which self-taught chef ...",
-      "scraped_at": "2026-05-24T18:05:23.521753+00:00"
+      "scraped_at": "2026-05-26T22:51:51.897494+00:00"
     },
     {
       "id": "le-filet",
@@ -1357,47 +2165,82 @@
       "good_for": [
         "solo_dining"
       ],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "terrace",
+        "wheelchair_access"
+      ],
+      "open_days": [
+        "friday",
+        "saturday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "17:45",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:45",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "17:45",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:45",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -1406,8 +2249,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/le-filet",
       "booking_url": "https://www.opentable.ca/r/le-filet-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "This restaurant is rightly renowned for the quality of its fish and seafood, the choice of which changes according to the catch: pan-seared scallops with almond and cider sauce; king salmon and ...",
-      "scraped_at": "2026-05-24T18:05:27.346216+00:00"
+      "scraped_at": "2026-05-26T22:51:52.067208+00:00"
     },
     {
       "id": "sabayon",
@@ -1424,48 +2266,77 @@
       "in_montreal_city": true,
       "lat": 45.4806137,
       "lng": -73.5657249,
-      "good_for": [],
+      "good_for": [
+        "farm_to_table"
+      ],
+      "special_diets": [],
+      "services": [
+        "wheelchair_access"
+      ],
+      "open_days": [
+        "friday",
+        "saturday",
+        "thursday"
+      ],
+      "serves_lunch": true,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "wednesday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "thursday",
-          "open": "19:00",
-          "close": "22:30",
+          "slots": [
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "14:00",
-          "close": "16:00",
+          "slots": [
+            {
+              "open": "14:00",
+              "close": "16:00"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "14:00",
-          "close": "16:00",
+          "slots": [
+            {
+              "open": "14:00",
+              "close": "16:00"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -1474,8 +2345,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/sabayon",
       "booking_url": "https://www.opentable.ca/r/sabayon-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "The chef has taken an atypical route to this kitchen, having trained in pâtisserie before turning his hand to cooking. Patrice Demers creates vivid, accessible, and unpretentious dishes that allow...",
-      "scraped_at": "2026-05-24T18:05:31.119205+00:00"
+      "scraped_at": "2026-05-26T22:51:52.156203+00:00"
     },
     {
       "id": "joe-beef",
@@ -1493,14 +2363,21 @@
       "lat": 45.4829971,
       "lng": -73.575245,
       "good_for": [],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-935-6504",
       "website": "https://joebeef.com/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/joe-beef",
       "booking_url": "https://www.opentable.ca/r/joe-beef?ref=18490",
       "online_booking": true,
-      "description_short": "Even just walking past this place you get a taste of the cheerful atmosphere and bonhomie that reign inside. Steaks and seafood, as well as incontrovertible French bistro classics (such as rabbit ...",
-      "scraped_at": "2026-05-24T18:05:34.856637+00:00"
+      "scraped_at": "2026-05-26T22:51:52.332646+00:00"
     },
     {
       "id": "le-violon",
@@ -1518,14 +2395,20 @@
       "lat": 45.5337494,
       "lng": -73.5787547,
       "good_for": [],
+      "special_diets": [],
+      "services": [
+        "wheelchair_access"
+      ],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-209-1181",
       "website": "https://le-violon.ca",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/le-violon",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "Here at the corner of rue Marquette and rue Gilford, on the Plateau-Mont-Royal, a quartet of co-owners, including chefs Danny Smiles and Mitch Laughren, cook up a storm. The feast is served in an ...",
-      "scraped_at": "2026-05-24T18:05:38.527874+00:00"
+      "scraped_at": "2026-05-26T22:51:52.503721+00:00"
     },
     {
       "id": "le-vin-papillon",
@@ -1543,17 +2426,26 @@
       "lat": 45.4827366,
       "lng": -73.5755825,
       "good_for": [
-        "solo_dining",
-        "groups"
+        "groups",
+        "solo_dining"
       ],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "terrace"
+      ],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-439-6494",
       "website": "https://vinpapillon.com",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/le-vin-papillon",
       "booking_url": "https://www.opentable.ca/r/le-vin-papillon-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "This lively and welcoming bistro in the heart of Little Burgundy is run by the team behind the neighbouring Joe Beef. On the agenda: fine wines and dishes designed for sharing in a friendly ...",
-      "scraped_at": "2026-05-24T18:05:42.215481+00:00"
+      "scraped_at": "2026-05-26T22:51:52.682665+00:00"
     },
     {
       "id": "la-chronique",
@@ -1571,47 +2463,78 @@
       "lat": 45.5216521,
       "lng": -73.5939084,
       "good_for": [],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [
+        "friday",
+        "saturday",
+        "sunday",
+        "thursday",
+        "wednesday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "wednesday",
-          "open": "18:00",
-          "close": "21:30",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "18:00",
-          "close": "21:30",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "18:00",
-          "close": "21:30",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "18:00",
-          "close": "21:30",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": "18:00",
-          "close": "21:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "21:00"
+            }
+          ],
           "closed": false
         }
       ],
@@ -1620,8 +2543,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/la-chronique",
       "booking_url": "https://www.opentable.ca/r/la-chronique-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "This is one of the oldest and most respected establishments on the Montreal restaurant scene. It continues to appeal through the ages thanks to its distinct sophistication, formal service, ...",
-      "scraped_at": "2026-05-24T18:05:45.939293+00:00"
+      "scraped_at": "2026-05-26T22:51:52.822011+00:00"
     },
     {
       "id": "oncle-lee",
@@ -1639,47 +2561,90 @@
       "lat": 45.5205874,
       "lng": -73.5947324,
       "good_for": [],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [
+        "friday",
+        "monday",
+        "saturday",
+        "sunday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": "17:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "tuesday",
-          "open": "17:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "17:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "17:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "17:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "17:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": "17:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         }
       ],
@@ -1688,8 +2653,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/oncle-lee",
       "booking_url": "https://resy.com/cities/montreal-qc/venues/oncle-lee?aff_id=0VKMelA",
       "online_booking": true,
-      "description_short": "This elegant and trendy little place is run by Chef Anderson Lee, who offers diners a window onto his well-honed take on contemporary Chinese cuisine, inflected with a typically Montreal touch. ...",
-      "scraped_at": "2026-05-24T18:05:49.981717+00:00"
+      "scraped_at": "2026-05-26T22:51:52.994868+00:00"
     },
     {
       "id": "lemeac",
@@ -1709,14 +2673,24 @@
       "good_for": [
         "family_friendly"
       ],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [
+        "brunch",
+        "terrace",
+        "wheelchair_access"
+      ],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-270-0999",
       "website": "https://www.restaurantlemeac.com",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/lemeac",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "You don't have to cross the Atlantic to enjoy a fine Parisian-style brasserie. While the building is indeed red bricks, the typical decor complete with a counter, a lively atmosphere, and staff ...",
-      "scraped_at": "2026-05-24T18:05:53.636671+00:00"
+      "scraped_at": "2026-05-26T22:51:53.173902+00:00"
     },
     {
       "id": "lawrence",
@@ -1734,47 +2708,64 @@
       "lat": 45.5249103,
       "lng": -73.5938767,
       "good_for": [],
+      "special_diets": [],
+      "services": [],
+      "open_days": [
+        "friday",
+        "saturday",
+        "thursday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "wednesday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "thursday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -1783,8 +2774,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/lawrence",
       "booking_url": "https://www.opentable.com/r/lawrence-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "British chef Marc Cohen is alone at the helm in the open kitchen of his cozy neighborhood restaurant. Some of the dishes are clearly influenced by his homeland: the albacore tuna is served on a ...",
-      "scraped_at": "2026-05-24T18:05:57.345257+00:00"
+      "scraped_at": "2026-05-26T22:51:53.314205+00:00"
     },
     {
       "id": "annette-bar-a-vin",
@@ -1801,48 +2791,109 @@
       "in_montreal_city": true,
       "lat": 45.5414999,
       "lng": -73.5626617,
-      "good_for": [],
+      "good_for": [
+        "chefs_table",
+        "date_night",
+        "eat_like_a_local",
+        "family_friendly",
+        "farm_to_table",
+        "groups",
+        "iconic",
+        "inspectors_favorite",
+        "outdoor_dining",
+        "solo_dining"
+      ],
+      "special_diets": [
+        "halal_options",
+        "kosher_options",
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "brunch",
+        "terrace",
+        "wheelchair_access"
+      ],
+      "open_days": [
+        "friday",
+        "monday",
+        "saturday",
+        "sunday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": true,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": "16:00",
-          "close": "00:00",
+          "slots": [
+            {
+              "open": "16:00",
+              "close": "00:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "tuesday",
-          "open": "16:00",
-          "close": "00:00",
+          "slots": [
+            {
+              "open": "16:00",
+              "close": "00:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "16:00",
-          "close": "00:00",
+          "slots": [
+            {
+              "open": "16:00",
+              "close": "00:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "16:00",
-          "close": "00:00",
+          "slots": [
+            {
+              "open": "16:00",
+              "close": "00:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "16:00",
-          "close": "02:00",
+          "slots": [
+            {
+              "open": "16:00",
+              "close": "02:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "16:00",
-          "close": "02:00",
+          "slots": [
+            {
+              "open": "16:00",
+              "close": "02:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": "16:00",
-          "close": "00:00",
+          "slots": [
+            {
+              "open": "16:00",
+              "close": "00:00"
+            }
+          ],
           "closed": false
         }
       ],
@@ -1851,8 +2902,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/annette-bar-a-vin",
       "booking_url": "https://www.opentable.ca/r/annette-bar-a-vin-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "On the redeveloped industrial site of the Angus Shops, Annette is chef Marc-Antoine Jetté's second establishment. Opened in 2023, it stands right opposite his first restaurant, Hoogan & Beaufort. ...",
-      "scraped_at": "2026-05-24T18:06:00.979852+00:00"
+      "scraped_at": "2026-05-26T22:51:53.406360+00:00"
     },
     {
       "id": "hoogan-et-beaufort",
@@ -1870,49 +2920,100 @@
       "lat": 45.5420842,
       "lng": -73.562878,
       "good_for": [
+        "farm_to_table",
         "solo_dining"
       ],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "wheelchair_access"
+      ],
+      "open_days": [
+        "friday",
+        "saturday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": true,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": "11:30",
-          "close": "13:30",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "13:30"
+            },
+            {
+              "open": "17:30",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "11:30",
-          "close": "13:30",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "13:30"
+            },
+            {
+              "open": "17:30",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "11:30",
-          "close": "13:30",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "13:30"
+            },
+            {
+              "open": "17:30",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "11:30",
-          "close": "13:30",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "13:30"
+            },
+            {
+              "open": "17:30",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "17:30",
-          "close": "22:30",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -1921,8 +3022,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/hoogan-et-beaufort",
       "booking_url": "https://www.opentable.ca/r/hoogan-and-beaufort-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "Set on a repurposed brownfield, this restaurant with an urban-style aesthetic has preserved remnants of its glorious heritage: red-brick walls dating back to 1904 and metal framework. Under the ...",
-      "scraped_at": "2026-05-24T18:06:04.650775+00:00"
+      "scraped_at": "2026-05-26T22:51:53.496577+00:00"
     },
     {
       "id": "sushi-nishinokaze",
@@ -1942,14 +3042,21 @@
       "good_for": [
         "solo_dining"
       ],
+      "special_diets": [
+        "halal_options",
+        "kosher_options"
+      ],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 438-558-6558",
       "website": "https://sushinishinokaze.com/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/sushi-nishinokaze",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "In the minimalist and traditional setting of a fine dining sushi counter, Japanese chef Vincent Gee has a demanding and deeply respectful approach to Edomae tradition. Fish, sourced from Japan for...",
-      "scraped_at": "2026-05-24T18:06:08.434492+00:00"
+      "scraped_at": "2026-05-26T22:51:53.624640+00:00"
     },
     {
       "id": "ile-flottante",
@@ -1967,47 +3074,73 @@
       "lat": 45.5235851,
       "lng": -73.600818,
       "good_for": [],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [
+        "friday",
+        "saturday",
+        "thursday",
+        "wednesday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "wednesday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -2016,8 +3149,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/ile-flottante",
       "booking_url": "https://www.opentable.ca/r/ile-flottante-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "In buzzy Mile End, this establishment cultivates a neighbourhood bistro vibe by way of painted wooden wall panelling and old varnished floorboards that bring to mind 19C Paris. Sean Murray Smith, ...",
-      "scraped_at": "2026-05-24T18:06:12.115623+00:00"
+      "scraped_at": "2026-05-26T22:51:53.801437+00:00"
     },
     {
       "id": "juliette-plaza",
@@ -2034,15 +3166,47 @@
       "in_montreal_city": true,
       "lat": 45.534684,
       "lng": -73.600264,
-      "good_for": [],
+      "good_for": [
+        "chefs_table",
+        "date_night",
+        "eat_like_a_local",
+        "family_friendly",
+        "farm_to_table",
+        "groups",
+        "iconic",
+        "inspectors_favorite",
+        "outdoor_dining",
+        "solo_dining"
+      ],
+      "special_diets": [
+        "halal_options",
+        "kosher_options",
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "brunch",
+        "terrace",
+        "wheelchair_access"
+      ],
+      "open_days": [
+        "friday",
+        "monday",
+        "saturday",
+        "sunday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": true,
+      "serves_dinner": true,
       "hours": [],
       "phone": "+1 514-903-6230",
       "website": "https://montrealplaza.com/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/juliette-plaza",
       "booking_url": "https://www.opentable.ca/r/juliette-plaza-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "Adjacent to Montréal Plaza, Juliette Plaza is a small restaurant with some 20 seats and a unique interior featuring eye-catching wallpapered ceiling panels, a suspended boat, and Asterix comic ...",
-      "scraped_at": "2026-05-24T18:06:15.818674+00:00"
+      "scraped_at": "2026-05-26T22:51:53.980809+00:00"
     },
     {
       "id": "montreal-plaza",
@@ -2060,47 +3224,79 @@
       "lat": 45.5349097,
       "lng": -73.6006162,
       "good_for": [],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [
+        "friday",
+        "saturday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": "17:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "17:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "17:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "17:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "17:00",
-          "close": "23:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -2109,8 +3305,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/montreal-plaza",
       "booking_url": "https://www.opentable.ca/r/montreal-plaza-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "A smattering of unusual features, such as a doll's house hanging upside down from the ceiling, lend this brasserie a unique identity, and the sizable tables are conducive to celebratory gatherings...",
-      "scraped_at": "2026-05-24T18:06:19.606463+00:00"
+      "scraped_at": "2026-05-26T22:51:54.128392+00:00"
     },
     {
       "id": "helicoptere",
@@ -2128,14 +3323,20 @@
       "lat": 45.551993,
       "lng": -73.540376,
       "good_for": [],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-543-4255",
       "website": "https://helicopteremtl.com/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/helicoptere",
       "booking_url": "https://www.opentable.ca/r/helicoptere-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "This restaurant at the entrance to Hochelaga wins diners over with its contemporary bistro vibe and fresh, well-balanced cuisine that is firmly rooted in the seasons. David Ollu, previously at ...",
-      "scraped_at": "2026-05-24T18:06:23.428626+00:00"
+      "scraped_at": "2026-05-26T22:51:54.303897+00:00"
     },
     {
       "id": "damas",
@@ -2153,14 +3354,18 @@
       "lat": 45.5223646,
       "lng": -73.6134295,
       "good_for": [],
+      "special_diets": [],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-439-5435",
       "website": "https://www.damas.ca/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/damas",
       "booking_url": "https://www.opentable.ca/r/damas-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "This place exudes an infectious joie de vivre. Whether you're new to Syrian or pan-Ottoman cuisine or a connoisseur, the experienced and welcoming team will lay out a memorable feast for you. From...",
-      "scraped_at": "2026-05-24T18:06:27.238903+00:00"
+      "scraped_at": "2026-05-26T22:51:54.498366+00:00"
     },
     {
       "id": "salle-climatisee",
@@ -2178,14 +3383,18 @@
       "lat": 45.5302296,
       "lng": -73.6089211,
       "good_for": [],
+      "special_diets": [],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-277-5504",
       "website": "https://salleclimatisee.com/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/salle-climatisee",
       "booking_url": "https://www.opentable.ca/r/salle-climatisee-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "With only about 20 spots, this bistro installed in Little Italy is nothing if not convivial. Its atypical and somewhat surreal name—meaning \"air-conditioned room\"—is a nod to French signage and a ...",
-      "scraped_at": "2026-05-24T18:06:31.025679+00:00"
+      "scraped_at": "2026-05-26T22:51:54.685810+00:00"
     },
     {
       "id": "asteur",
@@ -2203,16 +3412,46 @@
       "lat": 45.606103,
       "lng": -73.834201,
       "good_for": [
-        "groups"
+        "chefs_table",
+        "date_night",
+        "eat_like_a_local",
+        "family_friendly",
+        "farm_to_table",
+        "groups",
+        "iconic",
+        "inspectors_favorite",
+        "outdoor_dining",
+        "solo_dining"
       ],
+      "special_diets": [
+        "halal_options",
+        "kosher_options",
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "brunch",
+        "terrace",
+        "wheelchair_access"
+      ],
+      "open_days": [
+        "friday",
+        "monday",
+        "saturday",
+        "sunday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": true,
+      "serves_dinner": true,
       "hours": [],
       "phone": "+1 450-508-3858",
       "website": "https://www.restaurantasteur.ca/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/boisbriand_2433349/restaurant/asteur",
       "booking_url": null,
-      "online_booking": false,
-      "description_short": "At Asteur, which is housed in an elegant 19C stone building, chef Olivier Robillard devises ambitious cuisine. Against a backdrop of old beams, midnight-blue walls and white tablecloths, the ...",
-      "scraped_at": "2026-05-24T18:06:34.550842+00:00"
+      "online_booking": true,
+      "scraped_at": "2026-05-26T22:51:54.846759+00:00"
     },
     {
       "id": "parapluie-1216819",
@@ -2229,15 +3468,21 @@
       "in_montreal_city": true,
       "lat": 45.5301036,
       "lng": -73.6097871,
-      "good_for": [],
+      "good_for": [
+        "chefs_table"
+      ],
+      "special_diets": [],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-279-1514",
       "website": "https://boutique.leparapluie.ca",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/parapluie-1216819",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "Half of this restaurant, which seats some 30 diners, is taken up by a marble counter that encircles the kitchen. From that vantage point, facing Chef-owner Robin Filteau Boucher, you are totally ...",
-      "scraped_at": "2026-05-24T18:06:38.088664+00:00"
+      "scraped_at": "2026-05-26T22:51:54.972558+00:00"
     },
     {
       "id": "beba",
@@ -2255,14 +3500,20 @@
       "lat": 45.46502,
       "lng": -73.56774,
       "good_for": [],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-750-7087",
       "website": "https://restaurantbeba.ca/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/beba",
       "booking_url": "https://www.opentable.ca/r/restaurant-beba-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "The two Argentinian brothers behind this popular neighborhood restaurant have chosen a name that pays tribute to their grandmother. But rather than limiting themselves to their Argentinian roots, ...",
-      "scraped_at": "2026-05-24T18:06:41.781396+00:00"
+      "scraped_at": "2026-05-26T22:51:55.152255+00:00"
     },
     {
       "id": "park-1217938",
@@ -2280,47 +3531,103 @@
       "lat": 45.4786114,
       "lng": -73.6028726,
       "good_for": [],
+      "special_diets": [
+        "halal_options",
+        "kosher_options",
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "wheelchair_access"
+      ],
+      "open_days": [
+        "friday",
+        "saturday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": true,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": "11:30",
-          "close": "14:30",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "11:30",
-          "close": "14:30",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "11:30",
-          "close": "14:30",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "11:30",
-          "close": "14:30",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "11:30",
-          "close": "14:30",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "14:30"
+            },
+            {
+              "open": "17:30",
+              "close": "23:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -2329,8 +3636,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/westmount_2433735/restaurant/park-1217938",
       "booking_url": "https://www.opentable.ca/park-restaurant-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "At Westmount, Chef-owner Antonio Park serves up vibrant and balanced Japanese/South American fusion cuisine. To the sound of 80s pop, diners tuck into dishes such as precisely cooked suzuki ...",
-      "scraped_at": "2026-05-24T18:06:45.465923+00:00"
+      "scraped_at": "2026-05-26T22:51:55.298047+00:00"
     },
     {
       "id": "mon-lapin",
@@ -2347,15 +3653,25 @@
       "in_montreal_city": true,
       "lat": 45.5330978,
       "lng": -73.6105448,
-      "good_for": [],
+      "good_for": [
+        "inspectors_favorite"
+      ],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [
+        "wheelchair_access"
+      ],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-379-4550",
       "website": "https://vinmonlapin.com",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/mon-lapin",
       "booking_url": "https://www.opentable.ca/r/mon-lapin-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "Located in Little Italy, this top-flight wine bar is an absolute cornerstone of the Montreal scene. At the helm, Vanya Filipovic and Marc-Olivier Frappier, ardent lovers of food and wine, run this...",
-      "scraped_at": "2026-05-24T18:06:49.307713+00:00"
+      "scraped_at": "2026-05-26T22:51:55.485735+00:00"
     },
     {
       "id": "rotisserie-la-lune",
@@ -2376,47 +3692,87 @@
         "family_friendly",
         "groups"
       ],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [
+        "terrace",
+        "wheelchair_access"
+      ],
+      "open_days": [
+        "friday",
+        "monday",
+        "saturday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": "17:00",
-          "close": "22:30",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "tuesday",
-          "open": "17:00",
-          "close": "22:30",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "17:00",
-          "close": "22:30",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "17:00",
-          "close": "22:30",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "17:00",
-          "close": "22:30",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "17:00",
-          "close": "22:30",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "22:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -2425,8 +3781,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/rotisserie-la-lune",
       "booking_url": "https://www.opentable.ca/r/rotisserie-la-lune-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "A stone's throw from Mon Lapin, the owners of that restaurant have opened a different sort of eatery. Behind the large glass façade, in a lively brasserie setting, it's all about traditional ...",
-      "scraped_at": "2026-05-24T18:06:52.933532+00:00"
+      "scraped_at": "2026-05-26T22:51:55.574483+00:00"
     },
     {
       "id": "limbo",
@@ -2444,16 +3799,24 @@
       "lat": 45.5327813,
       "lng": -73.6159234,
       "good_for": [
+        "farm_to_table",
         "solo_dining"
       ],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-273-7772",
       "website": "https://restaurantlimbo.biz/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/limbo",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "This bistro in the heart of Little Italy, a stone's throw from Jean-Talon Market, is now run by chef Harrison Shewchuk. On his concise, seasonal menu, a handful of timeless classics – such as beef...",
-      "scraped_at": "2026-05-24T18:06:56.450147+00:00"
+      "scraped_at": "2026-05-26T22:51:55.740924+00:00"
     },
     {
       "id": "bar-st-denis",
@@ -2471,17 +3834,23 @@
       "lat": 45.5372164,
       "lng": -73.6125563,
       "good_for": [
-        "solo_dining",
-        "family_friendly"
+        "family_friendly",
+        "solo_dining"
       ],
+      "special_diets": [],
+      "services": [
+        "wheelchair_access"
+      ],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-276-9717",
       "website": "https://www.barstdenis.com/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/bar-st-denis",
       "booking_url": "https://www.opentable.ca/r/bar-st-denis-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "Despite its name, Bar St-Denis is a proper restaurant, run by Au Pied de Cochon alumni Emily Homsy and David Gauthier. The interior is done out in quite a retro style with a bar-counter, open ...",
-      "scraped_at": "2026-05-24T18:07:00.124088+00:00"
+      "scraped_at": "2026-05-26T22:51:55.917067+00:00"
     },
     {
       "id": "mastard",
@@ -2499,47 +3868,79 @@
       "lat": 45.5471083,
       "lng": -73.602868,
       "good_for": [],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [
+        "friday",
+        "monday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "tuesday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "18:00",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -2548,8 +3949,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/mastard",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "Quite a way off the beaten track, Mastard rests on the shoulders of humble and engaging chef-owner Simon Mathys, who has completed stints in the kitchens of Laurie Raphaël in Quebec City and Le ...",
-      "scraped_at": "2026-05-24T18:07:03.783784+00:00"
+      "scraped_at": "2026-05-26T22:51:56.005026+00:00"
     },
     {
       "id": "le-petit-alep",
@@ -2567,14 +3967,23 @@
       "lat": 45.5362847,
       "lng": -73.6163615,
       "good_for": [],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "wheelchair_access"
+      ],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-270-9361",
       "website": "https://www.restaurantalep.com",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/le-petit-alep",
       "booking_url": "https://www.opentable.ca/r/alep-restaurant-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "In their inviting and colorful restaurant, sisters Chahla and Tania Frangié, honor their family's Middle Eastern heritage through their food, which draws in particular on Syrian and Armenian ...",
-      "scraped_at": "2026-05-24T18:07:07.427787+00:00"
+      "scraped_at": "2026-05-26T22:51:56.136444+00:00"
     },
     {
       "id": "casavant",
@@ -2594,14 +4003,20 @@
       "good_for": [
         "solo_dining"
       ],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 438-380-0970",
       "website": "https://www.casavantmontreal.com",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/casavant",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "A brand-new bistro in a lively, buzzing neighborhood. Chef Charles-Tristan Prévost, previously at the renowned Le Club Chasse et Pêche, cooks up generous, meticulously prepared and indulgent ...",
-      "scraped_at": "2026-05-24T18:07:11.153081+00:00"
+      "scraped_at": "2026-05-26T22:51:56.274581+00:00"
     },
     {
       "id": "moccione",
@@ -2619,14 +4034,20 @@
       "lat": 45.5399615,
       "lng": -73.6197659,
       "good_for": [],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [],
+      "serves_lunch": false,
+      "serves_dinner": false,
       "hours": [],
       "phone": "+1 514-495-9899",
       "website": "https://moccione.com/",
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/moccione",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "After an olive oil-infused negroni—the perfect cocktail to whet the appetite— delve into the Italian menu created by Chef-owner Luca Cianciulli. His cuisine celebrates traditional flavors like ...",
-      "scraped_at": "2026-05-24T18:07:15.003907+00:00"
+      "scraped_at": "2026-05-26T22:51:56.462558+00:00"
     },
     {
       "id": "les-momes",
@@ -2644,47 +4065,94 @@
       "lat": 45.542451,
       "lng": -73.6220925,
       "good_for": [],
+      "special_diets": [
+        "halal_options",
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "terrace"
+      ],
+      "open_days": [
+        "friday",
+        "monday",
+        "saturday",
+        "sunday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": "17:30",
-          "close": "21:30",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "tuesday",
-          "open": "17:30",
-          "close": "21:30",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "17:30",
-          "close": "21:30",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "17:30",
-          "close": "21:30",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "17:30",
-          "close": "21:30",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "17:30",
-          "close": "21:30",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": "17:30",
-          "close": "21:30",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "21:30"
+            }
+          ],
           "closed": false
         }
       ],
@@ -2693,8 +4161,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/les-momes",
       "booking_url": "https://www.opentable.ca/r/les-momes-montreal?ref=18490",
       "online_booking": true,
-      "description_short": "This neighbourhood bistro run by a young French chef has a classic decor that is given a lift by orange light fittings and banquettes and a 1980s soundtrack. In his set menus, the chef shows great...",
-      "scraped_at": "2026-05-24T18:07:18.591847+00:00"
+      "scraped_at": "2026-05-26T22:51:56.649604+00:00"
     },
     {
       "id": "le-st-urbain",
@@ -2712,47 +4179,83 @@
       "lat": 45.5469859,
       "lng": -73.66574,
       "good_for": [],
+      "special_diets": [
+        "vegan_options",
+        "vegetarian_options"
+      ],
+      "services": [
+        "terrace"
+      ],
+      "open_days": [
+        "friday",
+        "saturday",
+        "thursday",
+        "wednesday"
+      ],
+      "serves_lunch": true,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "wednesday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "11:30",
-          "close": "14:00",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "14:00"
+            },
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "11:30",
-          "close": "14:00",
+          "slots": [
+            {
+              "open": "11:30",
+              "close": "14:00"
+            },
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "17:30",
-          "close": "22:00",
+          "slots": [
+            {
+              "open": "17:30",
+              "close": "22:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -2761,8 +4264,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/le-st-urbain",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "Nothing quite beats a good neighborhood restaurant, and this renowned place in the Ahuntsic district is a perfect example. The direct view of the chefs in the kitchen and the natural light ...",
-      "scraped_at": "2026-05-24T18:07:22.134048+00:00"
+      "scraped_at": "2026-05-26T22:51:56.788543+00:00"
     },
     {
       "id": "le-geraldine",
@@ -2780,49 +4282,81 @@
       "lat": 45.5587707,
       "lng": -73.893158,
       "good_for": [
-        "date_night"
+        "date_night",
+        "farm_to_table"
       ],
+      "special_diets": [
+        "vegetarian_options"
+      ],
+      "services": [],
+      "open_days": [
+        "friday",
+        "saturday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "serves_lunch": false,
+      "serves_dinner": true,
       "hours": [
         {
           "day": "monday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         },
         {
           "day": "tuesday",
-          "open": "17:00",
-          "close": "21:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "21:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "wednesday",
-          "open": "17:00",
-          "close": "21:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "21:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "thursday",
-          "open": "17:00",
-          "close": "21:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "21:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "friday",
-          "open": "17:00",
-          "close": "21:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "21:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "saturday",
-          "open": "17:00",
-          "close": "21:00",
+          "slots": [
+            {
+              "open": "17:00",
+              "close": "21:00"
+            }
+          ],
           "closed": false
         },
         {
           "day": "sunday",
-          "open": null,
-          "close": null,
+          "slots": [],
           "closed": true
         }
       ],
@@ -2831,8 +4365,7 @@
       "michelin_url": "https://guide.michelin.com/ca/en/quebec/quartier-du-vieux-saint-eustache_3238481/restaurant/le-geraldine",
       "booking_url": null,
       "online_booking": false,
-      "description_short": "In the historical area of Vieux-Saint-Eustache, this restaurant occupies a house dating from 1880 with charm to spare. The timeless cachet of the dining room done out in weathered wood echoes a ...",
-      "scraped_at": "2026-05-24T18:07:25.747153+00:00"
+      "scraped_at": "2026-05-26T22:51:56.888805+00:00"
     }
   ]
 }

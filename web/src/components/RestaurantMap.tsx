@@ -1,44 +1,80 @@
-import { useEffect } from "react";
-import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
+import { useEffect, useMemo } from "react";
+import {
+  MapContainer,
+  Marker,
+  Popup,
+  TileLayer,
+  useMap,
+} from "react-leaflet";
 import L from "leaflet";
 import type { Restaurant } from "../types";
-import { DISTINCTION_COLORS, DISTINCTION_LABELS, MICHELIN } from "../utils/labels";
-
-const MONTREAL_CENTER: [number, number] = [45.508, -73.574];
-
-function pinIcon(restaurant: Restaurant) {
-  const color = DISTINCTION_COLORS[restaurant.distinction];
-  const label =
-    restaurant.star_count > 0
-      ? `${restaurant.star_count}★`
-      : restaurant.is_bib_gourmand
-        ? "B"
-        : "•";
-
-  return L.divIcon({
-    className: "custom-pin",
-    html: `<div style="background:${color};color:white;border:2px solid white;border-radius:9999px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,.22);font-family:Figtree,sans-serif">${label}</div>`,
-    iconSize: [28, 28],
-    iconAnchor: [14, 14],
-  });
-}
-
-function MapFocus({ selected }: { selected: Restaurant | null }) {
-  const map = useMap();
-
-  useEffect(() => {
-    if (selected?.lat != null && selected.lng != null) {
-      map.flyTo([selected.lat, selected.lng], 14, { duration: 0.6 });
-    }
-  }, [map, selected]);
-
-  return null;
-}
+import { pinColorForRestaurant } from "../utils/labels";
+import { MapLegend } from "./MapLegend";
 
 interface RestaurantMapProps {
   restaurants: Restaurant[];
   selectedId: string | null;
   onSelect: (id: string) => void;
+}
+
+function FitBounds({ restaurants }: { restaurants: Restaurant[] }) {
+  const map = useMap();
+
+  const points = useMemo(
+    () =>
+      restaurants
+        .filter((r) => r.lat != null && r.lng != null)
+        .map((r) => [r.lat!, r.lng!] as [number, number]),
+    [restaurants],
+  );
+
+  useEffect(() => {
+    if (!points.length) return;
+    if (points.length === 1) {
+      map.setView(points[0], 14);
+      return;
+    }
+    map.fitBounds(L.latLngBounds(points), { padding: [40, 40] });
+  }, [map, points]);
+
+  return null;
+}
+
+function PanToSelected({
+  restaurants,
+  selectedId,
+}: {
+  restaurants: Restaurant[];
+  selectedId: string | null;
+}) {
+  const map = useMap();
+
+  useEffect(() => {
+    if (!selectedId) return;
+    const restaurant = restaurants.find((r) => r.id === selectedId);
+    if (restaurant?.lat != null && restaurant?.lng != null) {
+      map.panTo([restaurant.lat, restaurant.lng], { animate: true });
+    }
+  }, [map, restaurants, selectedId]);
+
+  return null;
+}
+
+function makePinIcon(color: string, selected: boolean) {
+  const size = selected ? 28 : 22;
+  const border = selected ? 3 : 2;
+  return L.divIcon({
+    className: "",
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+    html: `<div style="
+      width:${size}px;height:${size}px;
+      background:${color};
+      border:${border}px solid white;
+      border-radius:50%;
+      box-shadow:0 2px 6px rgba(0,0,0,0.35);
+    "></div>`,
+  });
 }
 
 export function RestaurantMap({
@@ -47,15 +83,15 @@ export function RestaurantMap({
   onSelect,
 }: RestaurantMapProps) {
   const mappable = restaurants.filter(
-    (restaurant) => restaurant.lat != null && restaurant.lng != null,
+    (r) => r.lat != null && r.lng != null,
   );
-  const selected =
-    mappable.find((restaurant) => restaurant.id === selectedId) ?? null;
+
+  const defaultCenter: [number, number] = [45.5017, -73.5673];
 
   return (
-    <div className="relative h-full min-h-[420px] overflow-hidden rounded-lg border border-michelin-border-light bg-white shadow-sm">
+    <div className="relative h-full min-h-[480px] w-full overflow-hidden rounded-lg border border-michelin-border-light">
       <MapContainer
-        center={MONTREAL_CENTER}
+        center={defaultCenter}
         zoom={12}
         className="h-full w-full"
         scrollWheelZoom
@@ -64,49 +100,38 @@ export function RestaurantMap({
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <MapFocus selected={selected} />
-        {mappable.map((restaurant) => (
-          <Marker
-            key={restaurant.id}
-            position={[restaurant.lat!, restaurant.lng!]}
-            icon={pinIcon(restaurant)}
-            eventHandlers={{
-              click: () => onSelect(restaurant.id),
-            }}
-          >
-            <Popup>
-              <div className="space-y-1 text-sm">
+        <FitBounds restaurants={mappable} />
+        <PanToSelected restaurants={mappable} selectedId={selectedId} />
+
+        {mappable.map((restaurant) => {
+          const selected = restaurant.id === selectedId;
+          const color = pinColorForRestaurant(restaurant);
+          return (
+            <Marker
+              key={restaurant.id}
+              position={[restaurant.lat!, restaurant.lng!]}
+              icon={makePinIcon(color, selected)}
+              eventHandlers={{
+                click: () => onSelect(restaurant.id),
+              }}
+            >
+              <Popup>
                 <strong>{restaurant.name}</strong>
-                <div>{DISTINCTION_LABELS[restaurant.distinction]}</div>
-                <div>
-                  {restaurant.price} · {restaurant.cuisine}
-                </div>
-              </div>
-            </Popup>
-          </Marker>
-        ))}
+                <br />
+                {restaurant.price} · {restaurant.cuisine}
+              </Popup>
+            </Marker>
+          );
+        })}
       </MapContainer>
 
-      <div className="pointer-events-none absolute bottom-3 left-3 rounded-lg border border-michelin-border-light bg-white/95 p-3 text-xs text-michelin-gray shadow">
-        <p className="mb-2 font-semibold uppercase tracking-wide text-michelin-black">
-          Legend
-        </p>
-        <LegendRow color={MICHELIN.gold} label="Michelin stars" />
-        <LegendRow color={MICHELIN.red} label="Bib Gourmand" />
-        <LegendRow color={MICHELIN.gray} label="Selected" />
-      </div>
-    </div>
-  );
-}
+      <MapLegend />
 
-function LegendRow({ color, label }: { color: string; label: string }) {
-  return (
-    <p className="mb-1 flex items-center gap-2">
-      <span
-        className="inline-block h-3 w-3 rounded-full"
-        style={{ backgroundColor: color }}
-      />
-      {label}
-    </p>
+      {mappable.length < restaurants.length && (
+        <p className="absolute bottom-3 left-3 z-[500] rounded bg-white/95 px-2 py-1 text-xs text-michelin-muted shadow-md backdrop-blur-sm">
+          {restaurants.length - mappable.length} without map coordinates
+        </p>
+      )}
+    </div>
   );
 }

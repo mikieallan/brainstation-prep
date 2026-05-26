@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 from enum import Enum
-from typing import Literal, Optional
+from typing import Optional
 
 from pydantic import BaseModel, Field
 
@@ -15,10 +15,14 @@ class Distinction(str, Enum):
     SELECTED = "selected"
 
 
+class TimeSlot(BaseModel):
+    open: str
+    close: str
+
+
 class DayHours(BaseModel):
     day: str
-    open: Optional[str] = None
-    close: Optional[str] = None
+    slots: list[TimeSlot] = Field(default_factory=list)
     closed: bool = False
 
 
@@ -50,13 +54,17 @@ class Restaurant(BaseModel):
     lat: Optional[float] = None
     lng: Optional[float] = None
     good_for: list[str] = Field(default_factory=list)
+    special_diets: list[str] = Field(default_factory=list)
+    services: list[str] = Field(default_factory=list)
+    open_days: list[str] = Field(default_factory=list)
+    serves_lunch: bool = False
+    serves_dinner: bool = False
     hours: list[DayHours] = Field(default_factory=list)
     phone: Optional[str] = None
     website: Optional[str] = None
     michelin_url: str
     booking_url: Optional[str] = None
     online_booking: bool = False
-    description_short: Optional[str] = None
     scraped_at: str = Field(
         default_factory=lambda: datetime.now(timezone.utc).isoformat()
     )

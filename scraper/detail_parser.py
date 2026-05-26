@@ -7,26 +7,34 @@ from typing import Any
 from bs4 import BeautifulSoup
 
 from scraper.fetch import absolute_michelin_url
-from scraper.models import DayHours, Distinction, ListEntry, Restaurant
+from scraper.models import DayHours, Distinction, ListEntry, Restaurant, TimeSlot
 
 STAR_ICON = "michelin-star_8519"
 BIB_ICON = "symboleBibendum"
 GREEN_ICON = "gastronomie-durable"
 
-GOOD_FOR_MAP = {
+TAG_MAP = {
     "family friendly": "family_friendly",
     "groups": "groups",
     "solo dining": "solo_dining",
     "out with friends": "out_with_friends",
-    "out with the family": "out_with_the_family",
-    "out with friends or family": "out_with_friends_or_family",
     "date night": "date_night",
-    "business": "business",
-    "quick bite": "quick_bite",
+    "farm-to-table": "farm_to_table",
+    "counter dining": "counter_dining",
+    "outdoor dining": "outdoor_dining",
+    "iconic": "iconic",
+    "chef's table": "chefs_table",
+    "eat like a local": "eat_like_a_local",
+    "inspectors favorite": "inspectors_favorite",
 }
 
 
-def parse_detail_page(html: str, entry: ListEntry) -> Restaurant:
+def parse_detail_page(
+    html: str,
+    entry: ListEntry,
+    *,
+    filter_meta: dict | None = None,
+) -> Restaurant:
     soup = BeautifulSoup(html, "lxml")
     ld = _extract_json_ld(soup)
     details = soup.select_one(".restaurant-details")
@@ -43,14 +51,31 @@ def parse_detail_page(html: str, entry: ListEntry) -> Restaurant:
     distinction, star_count, is_bib, is_green = _parse_distinction(
         entry, ld, details, soup
     )
-    good_for = _parse_good_for(details)
+    detail_tags = _parse_detail_tags(details)
     hours = _parse_hours(soup)
-    website = _parse_website(details, soup)
     booking_url, online_booking = _parse_booking(details, ld)
-    description = _parse_description(ld, details, soup)
+    website = _parse_website(details, soup)
 
     michelin_url = absolute_michelin_url(entry.michelin_path)
     in_montreal = _is_montreal_city(city, address)
+
+    good_for = sorted(set(detail_tags.get("good_for", [])))
+    if filter_meta:
+        good_for = sorted(set(good_for) | set(filter_meta.get("good_for_extra", [])))
+        special_diets = filter_meta.get("special_diets", [])
+        services = filter_meta.get("services", [])
+        open_days = filter_meta.get("open_days", [])
+        serves_lunch = filter_meta.get("serves_lunch", False) or _infers_lunch(hours)
+        serves_dinner = filter_meta.get("serves_dinner", False) or _infers_dinner(hours)
+        online_booking = online_booking or filter_meta.get(
+            "online_booking_filter", False
+        )
+    else:
+        special_diets = []
+        services = []
+        open_days = []
+        serves_lunch = _infers_lunch(hours)
+        serves_dinner = _infers_dinner(hours)
 
     return Restaurant(
         id=entry.id,
@@ -68,13 +93,17 @@ def parse_detail_page(html: str, entry: ListEntry) -> Restaurant:
         lat=lat,
         lng=lng,
         good_for=good_for,
+        special_diets=special_diets,
+        services=services,
+        open_days=open_days,
+        serves_lunch=serves_lunch,
+        serves_dinner=serves_dinner,
         hours=hours,
         phone=phone,
         website=website,
         michelin_url=michelin_url,
         booking_url=booking_url,
         online_booking=online_booking,
-        description_short=description,
     )
 
 
@@ -198,7 +227,9 @@ def _count_star_icons(details: Any) -> int:
     if not details:
         return 0
     count = 0
-    for img in details.select(".distinction-icon img, .card__menu-content--distinction img"):
+    for img in details.select(
+        ".distinction-icon img, .card__menu-content--distinction img"
+    ):
         src = (img.get("src") or "").lower()
         if STAR_ICON in src:
             count += 1
@@ -208,7 +239,9 @@ def _count_star_icons(details: Any) -> int:
 def _has_bib_icon(details: Any) -> bool:
     if not details:
         return False
-    for img in details.select(".distinction-icon img, .card__menu-content--distinction img"):
+    for img in details.select(
+        ".distinction-icon img, .card__menu-content--distinction img"
+    ):
         src = (img.get("src") or "").lower()
         if BIB_ICON in src:
             return True
@@ -247,16 +280,18 @@ def _distinction_from_hints(entry: ListEntry) -> tuple[int, bool]:
     return 0, False
 
 
-def _parse_good_for(details: Any) -> list[str]:
+def _parse_detail_tags(details: Any) -> dict[str, list[str]]:
+    good_for: list[str] = []
     if not details:
-        return []
-    tags: list[str] = []
+        return {"good_for": good_for}
+    seen: set[str] = set()
     for pill in details.select(".tag--pills"):
         label = pill.get_text(strip=True).lower()
-        mapped = GOOD_FOR_MAP.get(label)
-        if mapped and mapped not in tags:
-            tags.append(mapped)
-    return tags
+        mapped = TAG_MAP.get(label)
+        if mapped and mapped not in seen:
+            seen.add(mapped)
+            good_for.append(mapped)
+    return {"good_for": good_for}
 
 
 def _parse_hours(soup: BeautifulSoup) -> list[DayHours]:
@@ -282,16 +317,32 @@ def _parse_hours(soup: BeautifulSoup) -> list[DayHours]:
 
     for block in container.select(".card-borderline"):
         day_el = block.select_one(".card--title")
-        time_el = block.select_one(".card--content")
         if not day_el:
             continue
         day = day_el.get_text(strip=True).lower()
-        raw = time_el.get_text(strip=True) if time_el else ""
-        if not raw or raw.lower() == "closed":
+        time_els = block.select(".card--content")
+        if not time_els:
             hours.append(DayHours(day=day, closed=True))
             continue
-        open_time, close_time = _split_hours(raw)
-        hours.append(DayHours(day=day, open=open_time, close=close_time))
+
+        raw_times = [el.get_text(strip=True) for el in time_els if el.get_text(strip=True)]
+        if not raw_times or all(t.lower() == "closed" for t in raw_times):
+            hours.append(DayHours(day=day, closed=True))
+            continue
+
+        slots: list[TimeSlot] = []
+        for raw in raw_times:
+            if raw.lower() == "closed":
+                continue
+            open_time, close_time = _split_hours(raw)
+            if open_time and close_time:
+                slots.append(TimeSlot(open=open_time, close=close_time))
+
+        if slots:
+            hours.append(DayHours(day=day, slots=slots))
+        else:
+            hours.append(DayHours(day=day, closed=True))
+
     return hours
 
 
@@ -355,37 +406,26 @@ def _parse_booking(details: Any, ld: dict[str, Any]) -> tuple[str | None, bool]:
     return booking_url, online
 
 
-def _parse_description(ld: dict[str, Any], details: Any, soup: BeautifulSoup) -> str | None:
-    review = ld.get("review")
-    if isinstance(review, dict):
-        desc = review.get("description")
-        if desc:
-            return _truncate(str(desc))
-
-    if details:
-        for selector in (
-            ".restaurant-details__description--text",
-            ".restaurant-details__description",
-            ".data-sheet__block--text",
-        ):
-            el = details.select_one(selector)
-            if el:
-                return _truncate(el.get_text(" ", strip=True))
-
-    for node in soup.find_all(string=re.compile(r"Michelin Inspector", re.I)):
-        parent = node.find_parent(["p", "div"])
-        if parent:
-            text = parent.get_text(" ", strip=True)
-            if len(text) > 80:
-                return _truncate(text)
-    return None
+def _infers_lunch(hours: list[DayHours]) -> bool:
+    for day in hours:
+        if day.closed:
+            continue
+        for slot in day.slots:
+            open_h = int(slot.open.split(":")[0])
+            if open_h < 15:
+                return True
+    return False
 
 
-def _truncate(text: str, limit: int = 220) -> str:
-    text = re.sub(r"\s+", " ", text).strip()
-    if len(text) <= limit:
-        return text
-    return text[: limit - 1].rstrip() + "…"
+def _infers_dinner(hours: list[DayHours]) -> bool:
+    for day in hours:
+        if day.closed:
+            continue
+        for slot in day.slots:
+            open_h = int(slot.open.split(":")[0])
+            if open_h >= 15:
+                return True
+    return False
 
 
 def _is_montreal_city(city: str | None, address: str | None) -> bool:

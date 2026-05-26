@@ -1,6 +1,6 @@
-# Montreal Michelin Guide
+# Montreal Michelin Guide — Map Explorer
 
-Scrape all [Michelin-recommended Montreal restaurants](https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurants) and explore them in a local map + filterable list web app.
+One-time scrape of all [Michelin-recommended Montreal restaurants](https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurants), displayed on an interactive map with collapsible filters.
 
 ## Quick start
 
@@ -9,17 +9,12 @@ Scrape all [Michelin-recommended Montreal restaurants](https://guide.michelin.co
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-
-# Playwright browsers (if not already present)
 PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers playwright install chromium
 
-# 2. Scrape (~4 min for 63 restaurants)
+# 2. Scrape (~5–8 min for 63 restaurants + filter metadata)
 PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers python -m scraper.main
 
-# 3. Copy data for the web app
-cp data/montreal_michelin.json web/public/montreal_michelin.json
-
-# 4. Run the web app
+# 3. Web app (JSON is copied to web/public/ automatically)
 cd web && npm install && npm run dev
 ```
 
@@ -31,20 +26,21 @@ Open the URL Vite prints (usually `http://localhost:5173`).
 python -m scraper.main                  # full scrape → data/montreal_michelin.json
 python -m scraper.main --limit 5        # smoke test
 python -m scraper.main --refresh        # ignore cached HTML
-python -m scraper.main --delay 2.0      # slower, more polite
+python -m scraper.main --skip-filters   # detail pages only
 ```
 
 The scraper:
 
-1. Reads both list pages (48 + 15 restaurants).
-2. Visits each detail page with Playwright (Michelin blocks plain HTTP on detail URLs).
-3. Writes structured JSON with caching under `scraper/.cache/`.
-
-Re-run before your trip to pick up guide updates.
+1. Reads filter metadata from Michelin list-page filters (cuisine tags, good-for, dietary, services, open days, lunch/dinner).
+2. Reads both list pages (48 + 15 restaurants).
+3. Visits each detail page with Playwright for hours, coordinates, and distinction.
+4. Writes structured JSON to `data/montreal_michelin.json` and `web/public/montreal_michelin.json`.
 
 ## Web app
 
-Filter by Michelin distinction, price, family-friendly, and groups. Click a card or map pin to see hours, links, and inspector notes.
+- **Map tab** — colored pins by Michelin distinction, scrollable restaurant cards, detail drawer.
+- **List tab** — scannable card grid.
+- **Filters** — collapsible groups: distinction, price, cuisine, good for, dietary, availability, services.
 
 ```bash
 cd web
@@ -52,38 +48,20 @@ npm run dev      # development
 npm run build    # production build in web/dist
 ```
 
-After re-scraping, copy the JSON into `web/public/` so the app picks up new data without rebuilding.
-
 ## Deploy on Vercel
 
-The repo includes a root [`vercel.json`](vercel.json) that builds the app from `web/` (the Python scraper is not deployed).
+Import the repo and use the root `vercel.json` (builds from `web/`). Commit `web/public/montreal_michelin.json` so deploys do not require running the scraper.
 
-1. Import [github.com/mikieallan/brainstation-prep](https://github.com/mikieallan/brainstation-prep).
-2. Leave **Root Directory** empty (or set to `.`) — `vercel.json` handles the `web/` subfolder.
-3. Framework preset: **Vite** (or let `vercel.json` override).
-
-Alternatively, set **Root Directory** to `web` and use the default Vite build settings; you can remove root `vercel.json` if you prefer.
-
-## Field glossary
+## Data fields
 
 | Field | Description |
 |-------|-------------|
 | `distinction` | `three_stars`, `two_stars`, `one_star`, `bib_gourmand`, or `selected` |
-| `star_count` | 0–3 Michelin stars |
-| `is_bib_gourmand` | Bib Gourmand (good quality, good value) |
-| `is_green_star` | Green Star for sustainability |
-| `price` / `price_level` | `$`–`$$$$` and numeric level 1–4 |
-| `good_for` | Tags such as `family_friendly`, `groups`, `solo_dining` |
-| `hours` | Per-day open/close in 24h format, or `closed: true` |
-| `website` | Restaurant site when Michelin lists one |
-| `michelin_url` | Official guide page |
-| `booking_url` | OpenTable / Resy link when available |
+| `good_for` | Tags such as `solo_dining`, `groups`, `farm_to_table` |
+| `special_diets` | `vegan_options`, `vegetarian_options`, `halal_options`, `kosher_options` |
+| `services` | `wheelchair_access`, `terrace`, `brunch` |
+| `open_days` | Days the restaurant is open per Michelin filters |
+| `hours` | Per-day slots with lunch/dinner ranges when listed |
 | `in_montreal_city` | `false` for outer suburbs (e.g. Boisbriand) |
 
-## Known data gaps
-
-- **Website** — Often missing on Michelin; left as `null` (62/63 in the latest scrape had websites).
-- **Hours** — Only shown when Michelin publishes them (~28/63 in the latest scrape).
-- **Good for** — Only when Michelin tags the restaurant (family/groups filters apply to tagged venues only).
-
-Data is for personal trip planning. Link back to the [Michelin Guide](https://guide.michelin.com/) as the source of truth.
+Data is for personal trip planning. [MICHELIN Guide](https://guide.michelin.com/) is the source of truth.

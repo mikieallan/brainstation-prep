@@ -5,10 +5,14 @@ export type Distinction =
   | "bib_gourmand"
   | "selected";
 
+export interface TimeSlot {
+  open: string;
+  close: string;
+}
+
 export interface DayHours {
   day: string;
-  open?: string | null;
-  close?: string | null;
+  slots: TimeSlot[];
   closed?: boolean;
 }
 
@@ -28,13 +32,17 @@ export interface Restaurant {
   lat: number | null;
   lng: number | null;
   good_for: string[];
+  special_diets: string[];
+  services: string[];
+  open_days: string[];
+  serves_lunch: boolean;
+  serves_dinner: boolean;
   hours: DayHours[];
   phone: string | null;
   website: string | null;
   michelin_url: string;
   booking_url: string | null;
   online_booking: boolean;
-  description_short: string | null;
   scraped_at: string;
 }
 
@@ -49,7 +57,15 @@ export interface Filters {
   search: string;
   distinctions: Distinction[];
   prices: number[];
-  familyFriendly: boolean;
-  groups: boolean;
-  soloDining: boolean;
+  cuisines: string[];
+  goodFor: string[];
+  diets: string[];
+  openDays: string[];
+  servesLunch: boolean;
+  servesDinner: boolean;
+  onlineBooking: boolean;
+  services: string[];
+  greenStar: boolean;
 }
+
+export type TabId = "map" | "list";
