@@ -54,6 +54,16 @@ npm run build    # production build in web/dist
 
 After re-scraping, copy the JSON into `web/public/` so the app picks up new data without rebuilding.
 
+## Deploy on Vercel
+
+The repo includes a root [`vercel.json`](vercel.json) that builds the app from `web/` (the Python scraper is not deployed).
+
+1. Import [github.com/mikieallan/brainstation-prep](https://github.com/mikieallan/brainstation-prep).
+2. Leave **Root Directory** empty (or set to `.`) — `vercel.json` handles the `web/` subfolder.
+3. Framework preset: **Vite** (or let `vercel.json` override).
+
+Alternatively, set **Root Directory** to `web` and use the default Vite build settings; you can remove root `vercel.json` if you prefer.
+
 ## Field glossary
 
 | Field | Description |
