@@ -1,0 +1,12 @@
+data/
+scraper/.cache/
+.playwright-browsers/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.DS_Store
+
+web/node_modules/
+web/dist/

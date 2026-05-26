@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-michelin-red: #bd2332;
+  --color-michelin-red-dark: #ba0b2f;
+  --color-michelin-red-light: #fbe4e7;
+  --color-michelin-gold: #ba8b00;
+  --color-michelin-black: #191919;
+  --color-michelin-ink: #222222;
+  --color-michelin-gray: #4d4d4d;
+  --color-michelin-muted: #888888;
+  --color-michelin-border: #cccccc;
+  --color-michelin-border-light: #e0e0e0;
+  --color-michelin-surface: #f6f6f6;
+  --color-michelin-green: #00ab6c;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Figtree", "Helvetica Neue", system-ui, sans-serif;
+  background: var(--color-michelin-surface);
+  color: var(--color-michelin-black);
+}
+
+.leaflet-container {
+  font-family: inherit;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  border: 1px solid var(--color-michelin-border-light);
+}
+
+.leaflet-popup-content strong {
+  color: var(--color-michelin-black);
+}
+
+.michelin-filter-btn {
+  border: 1px solid var(--color-michelin-border);
+  color: var(--color-michelin-gray);
+  background: #fff;
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.michelin-filter-btn:hover {
+  border-color: var(--color-michelin-border-light);
+  background: var(--color-michelin-surface);
+}
+
+.michelin-filter-btn-active {
+  border: 2px solid var(--color-michelin-black);
+  background: var(--color-michelin-black);
+  color: #fff;
+}
+
+.michelin-filter-btn-active:hover {
+  border-color: var(--color-michelin-black);
+  background: var(--color-michelin-black);
+  color: #fff;
+}
+
+.michelin-filter-btn-red-active {
+  border: 2px solid var(--color-michelin-red);
+  background: var(--color-michelin-red);
+  color: #fff;
+}
+
+.michelin-filter-btn-red-active:hover {
+  border-color: var(--color-michelin-red-dark);
+  background: var(--color-michelin-red-dark);
+  color: #fff;
+}
